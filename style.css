@@ -61,4 +61,6 @@ Push in sidebar
     .toggle-menu {
         display: none;
     }
+    .site {
+    	height: auto;
 }
