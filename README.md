@@ -1,3 +1,3 @@
-# Non-responsive push-in-sidebar
+# Responsive push-in-sidebar
 
-A basic push-in-sidebar for websites. This branch contains the non-responsive version only. Preview [here](https://htmlpreview.github.io/?https://raw.githubusercontent.com/seyoum/Push-in-sidebar/non-RWD/index.html)
+A basic push-in-sidebar for websites. This branch contains the responsive version. Preview [here](https://htmlpreview.github.io/?https://github.com/seyoum/Push-in-sidebar/blob/RWD/index.html)
