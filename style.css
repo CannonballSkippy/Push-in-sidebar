@@ -41,11 +41,24 @@ Push in sidebar
     left: 240px;
 }
 
-
 /* Transitions */
 .cbp-spmenu,
 .push-body {
     -webkit-transition: all 0.3s ease;
        -moz-transition: all 0.3s ease;
             transition: all 0.3s ease;
+}
+
+/*Responsive -sidebar will stay open on wide screen*/
+@media screen and (min-width: 1000px) {
+    .cbp-spmenu-left {
+        left: 0;
+    }
+    .push-body {
+        left: 240px;
+        position: absolute;
+    }
+    .toggle-menu {
+        display: none;
+    }
 }
