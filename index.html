@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+	<meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport'>
+	<title>Push in sidebar</title>
+	<meta charset="utf-8"><!-- CDN -->
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css" rel="stylesheet">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js">
+	</script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js">
+	</script><!-- Local -->
+	<link href="style.css" rel="stylesheet" type="text/css">
+	<script src="script.js" type="text/javascript">
+	</script>
+</head>
+
+<body>
+	<!-- Left menu element-->
+
+	<nav class="cbp-spmenu cbp-spmenu-vertical cbp-spmenu-left">
+		Lorem ipsum do ut ad fugiat laboris officia nulla ut ut laborum laborum voluptate. Dolore in nisi nisi incididunt consequat laborum velit dolor aliquip magna enim laborum sit labore. Ut reprehenderit laboris culpa in elit laboris et enim adipisicing ut esse quis aute duis commodo culpa enim velit. Lorem ipsum ullamco duis pariatur sunt minim ut deserunt dolor culpa velit aute ut dolore cillum labore excepteur ut incididunt. Ea anim duis veniam minim dolore velit enim nulla elit nostrud sint in aute occaecat in incididunt nulla.
+	</nav>
+
+
+	<div class="site">
+		<button class="toggle-menu menu-left push-body">Menu</button>
+
+		<h1>Push in sidebar</h1>
+
+
+		<p>This project uses takien's <a href="https://github.com/takien/jPushMenu">jPush</a> to create a push-in menu. It is jQuery dependent so make sure you include it.</p>
+	</div>
+	<!--call jPushMenu, required-->
+	<script>
+	jQuery(document).ready(function($) {$('.toggle-menu').jPushMenu();});
+	</script>
+</body>
+</html>

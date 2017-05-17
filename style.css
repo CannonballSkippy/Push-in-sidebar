@@ -1,0 +1,51 @@
+/*==================================================================
+Push in sidebar
+==================================================================*/
+/* Make the wrapper div stretch across the VP. Clicking in .site closes the menu */
+.site {
+    height: 100vh;
+}
+
+/* General styles for all menus */
+.cbp-spmenu {
+    background: WhiteSmoke;
+    position: fixed;
+}
+
+/* Orientation-dependent styles for the content of the menu */
+.cbp-spmenu-vertical {
+    width: 240px;
+    height: 100%;
+    top: 0;
+    z-index: 1000;
+    overflow-y: auto;
+}
+
+/* Vertical menu that slides from the left or right */
+.cbp-spmenu-left {
+    left: -240px;
+}
+
+.cbp-spmenu-left.menu-open {
+    left: 0px;
+}
+
+/* Push classes applied to the body */
+.push-body {
+    overflow-x: hidden;
+    position: relative;
+    left: 0;
+}
+
+.push-body-toright {
+    left: 240px;
+}
+
+
+/* Transitions */
+.cbp-spmenu,
+.push-body {
+    -webkit-transition: all 0.3s ease;
+       -moz-transition: all 0.3s ease;
+            transition: all 0.3s ease;
+}
