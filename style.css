@@ -3,7 +3,10 @@ Push in sidebar
 ==================================================================*/
 /* Make the wrapper div stretch across the VP. Clicking in .site closes the menu */
 .site {
+    background-color: lightgreen;
     height: 100vh;
+    position: absolute;
+    width: 100%;
 }
 
 /* The sidebar */
@@ -38,8 +41,10 @@ Push in sidebar
 .pushsidebar,
 .push-body {
     -webkit-transition: all 0.3s ease;
-       -moz-transition: all 0.3s ease;
-            transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    transition: all 0.3s ease;
 }
 
 /*Responsive -sidebar will stay open on wide screen*/
@@ -49,11 +54,8 @@ Push in sidebar
     }
     .push-body {
         left: 240px;
-        position: absolute;
     }
     .toggle-menu {
         display: none;
     }
-    .site {
-    	height: auto;
 }
