@@ -19,8 +19,8 @@
 
             // Determine menu and push direction
             if ($(this).is('.' + o.showLeftClass)) {
-                target         = '.cbp-spmenu-left';
-                push_direction = 'toright';
+                target         = '.pushsidebar';
+                push_direction = 'right';
             }
 
             if (target == '') {
@@ -42,8 +42,8 @@
 
         var jPushMenu = {
             close: function (o) {
-                $('.jPushMenuBtn,body,.cbp-spmenu')
-                    .removeClass('disabled ' + o.activeClass + ' ' + o.menuOpenClass + ' ' + o.pushBodyClass + '-toleft ' + o.pushBodyClass + '-toright');
+                $('.jPushMenuBtn,body,.pushsidebar')
+                    .removeClass('disabled ' + o.activeClass + ' ' + o.menuOpenClass + ' ' + o.pushBodyClass + '-toleft ' + o.pushBodyClass + '-right');
             }
         }
 
@@ -56,7 +56,7 @@
 
         // Close menu on clicking menu link
         if (o.closeOnClickLink) {
-            $('.cbp-spmenu a').on('click',function() {
+            $('.pushsidebar a').on('click',function() {
                 jPushMenu.close(o);
             });
         }

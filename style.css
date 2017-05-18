@@ -6,27 +6,20 @@ Push in sidebar
     height: 100vh;
 }
 
-/* General styles for all menus */
-.cbp-spmenu {
+/* The sidebar */
+.pushsidebar {
     background: WhiteSmoke;
     position: fixed;
-}
-
-/* Orientation-dependent styles for the content of the menu */
-.cbp-spmenu-vertical {
     width: 240px;
     height: 100%;
     top: 0;
     z-index: 1000;
     overflow-y: auto;
-}
-
-/* Vertical menu that slides from the left or right */
-.cbp-spmenu-left {
     left: -240px;
 }
 
-.cbp-spmenu-left.menu-open {
+/*The sidebar when activated*/
+.pushsidebar.menu-open {
     left: 0px;
 }
 
@@ -37,12 +30,12 @@ Push in sidebar
     left: 0;
 }
 
-.push-body-toright {
+.push-body-right {
     left: 240px;
 }
 
 /* Transitions */
-.cbp-spmenu,
+.pushsidebar,
 .push-body {
     -webkit-transition: all 0.3s ease;
        -moz-transition: all 0.3s ease;
@@ -51,7 +44,7 @@ Push in sidebar
 
 /*Responsive -sidebar will stay open on wide screen*/
 @media screen and (min-width: 1000px) {
-    .cbp-spmenu-left {
+    .pushsidebar {
         left: 0;
     }
     .push-body {
