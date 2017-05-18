@@ -3,7 +3,6 @@ Push in sidebar
 ==================================================================*/
 /* Make the wrapper div stretch across the VP. Clicking in .site closes the menu */
 .site {
-    background-color: lightgreen;
     height: 100vh;
     position: absolute;
     width: 100%;
