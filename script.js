@@ -19,7 +19,7 @@
 
             // Determine menu and push direction
             if ($(this).is('.' + o.showLeftClass)) {
-                target         = '.pushsidebar';
+                target         = '.push-sidebar';
                 push_direction = 'right';
             }
 
@@ -42,7 +42,7 @@
 
         var jPushMenu = {
             close: function (o) {
-                $('.jPushMenuBtn,body,.pushsidebar')
+                $('.jPushMenuBtn,body,.push-sidebar')
                     .removeClass('disabled ' + o.activeClass + ' ' + o.menuOpenClass + ' ' + o.pushBodyClass + '-toleft ' + o.pushBodyClass + '-right');
             }
         }
@@ -56,7 +56,7 @@
 
         // Close menu on clicking menu link
         if (o.closeOnClickLink) {
-            $('.pushsidebar a').on('click',function() {
+            $('.push-sidebar a').on('click',function() {
                 jPushMenu.close(o);
             });
         }
@@ -68,7 +68,7 @@
     */
     $.fn.jPushMenu.defaultOptions = {
         pushBodyClass      : 'push-body',
-        showLeftClass      : 'menu-left',
+        showLeftClass      : 'toggle-menu',
         activeClass        : 'menu-active',
         menuOpenClass      : 'menu-open',
         closeOnClickOutside: true,
