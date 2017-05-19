@@ -19,7 +19,7 @@
 
             // Determine menu and push direction
             if ($(this).is('.' + o.showLeftClass)) {
-                target         = '.push-sidebar';
+                target         = '.main-sidebar';
                 push_direction = 'right';
             }
 
@@ -42,7 +42,7 @@
 
         var jPushMenu = {
             close: function (o) {
-                $('.jPushMenuBtn,body,.push-sidebar')
+                $('.jPushMenuBtn,body,.main-sidebar')
                     .removeClass('disabled ' + o.activeClass + ' ' + o.menuOpenClass + ' ' + o.pushBodyClass + '-toleft ' + o.pushBodyClass + '-right');
             }
         }
@@ -56,7 +56,7 @@
 
         // Close menu on clicking menu link
         if (o.closeOnClickLink) {
-            $('.push-sidebar a').on('click',function() {
+            $('.main-sidebar a').on('click',function() {
                 jPushMenu.close(o);
             });
         }
@@ -67,8 +67,8 @@
     * do not directly edit here, use function parameter when call jPushMenu.
     */
     $.fn.jPushMenu.defaultOptions = {
-        pushBodyClass      : 'push-body',
-        showLeftClass      : 'toggle-menu',
+        pushBodyClass      : 'sidebar-push',
+        showLeftClass      : 'sidebar-button',
         activeClass        : 'menu-active',
         menuOpenClass      : 'menu-open',
         closeOnClickOutside: true,

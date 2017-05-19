@@ -9,7 +9,7 @@ Push in sidebar
 }
 
 /* The sidebar */
-.push-sidebar {
+.main-sidebar {
     background: WhiteSmoke;
     position: fixed;
     width: 250px;
@@ -21,24 +21,24 @@ Push in sidebar
 }
 
 /*The sidebar when activated*/
-.push-sidebar.menu-open {
+.main-sidebar.menu-open {
     left: 0px;
 }
 
 /* Push classes applied to the body */
-.push-body {
+.sidebar-push {
     overflow-x: hidden;
     position: relative;
     left: 0;
 }
 
-.push-body-right {
+.sidebar-push-right {
     left: 250px;
 }
 
 /* Transitions */
-.push-sidebar,
-.push-body {
+.main-sidebar,
+.sidebar-push {
     -webkit-transition: all 0.3s ease;
     -moz-transition: all 0.3s ease;
     -o-transition: all 0.3s ease;
@@ -48,13 +48,13 @@ Push in sidebar
 
 /*Responsive -sidebar will stay open on wide screen*/
 @media screen and (min-width: 1000px) {
-    .push-sidebar {
+    .main-sidebar {
         left: 0;
     }
-    .push-body {
+    .sidebar-push {
         left: 250px;
     }
-    .toggle-menu {
+    .sidebar-button {
         display: none;
     }
 }
