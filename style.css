@@ -21,7 +21,7 @@ Push in sidebar
 }
 
 /*The sidebar when activated*/
-.main-sidebar.menu-open {
+.main-sidebar.sidebar-open {
     left: 0px;
 }
 

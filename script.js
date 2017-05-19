@@ -69,8 +69,8 @@
     $.fn.jPushMenu.defaultOptions = {
         pushBodyClass      : 'sidebar-push',
         showLeftClass      : 'sidebar-button',
-        activeClass        : 'menu-active',
-        menuOpenClass      : 'menu-open',
+        activeClass        : 'sidebar-active',
+        menuOpenClass      : 'sidebar-open',
         closeOnClickOutside: true,
         closeOnClickLink   : false
     };
